@@ -1,5 +1,19 @@
 BoxLayoutExample:
-
+<BoxLayoutExample>:
+    orientation: "vertical"
+    Button:
+        text: "A"
+        # size: "40dp", "20dp"
+        size_hint: None, .5
+        # pos_hint to change the button/label position inside the layout
+        # for x - x:1 or center_x:1 or right:1
+        # for y - y:1 or center_y:1 or top:1
+        pos_hint: { "x": .5}
+    Button:
+        text: "B"
+        size_hint: 1, .5
+    Label:
+        text: "C"
 
 <MainWidget>:
     Button:
