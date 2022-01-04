@@ -1,4 +1,15 @@
-BoxLayoutExample:
+AnchorLayoutExample:
+
+<AnchorLayoutExample>:
+    # properties only for Anchor Layout - anchor_x, anchor_y
+    # anchor_x different values - right, center, left
+    anchor_x: "left"
+    # annchor_y different values - bottom, top, center
+    anchor_y: "top"
+    Button:
+        text: "A"
+        size_hint: .1, .1
+
 <BoxLayoutExample>:
     orientation: "horizontal"
     Button:
@@ -11,6 +22,7 @@ BoxLayoutExample:
         pos_hint: { "x": .5}
     BoxLayout:
         orientation: "vertical"
+        spacing: "10dp"
         Button:
             text: "B1"
             size_hint: 1, .5
