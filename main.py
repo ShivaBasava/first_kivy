@@ -8,7 +8,11 @@ from kivy.uix.widget import Widget
 
 
 class StackLayoutExample(StackLayout):
-    pass
+    def __init__(self,**kwargs):
+        super().__init__(**kwargs)
+        for i in range(0, 10):
+            b = Button(text=str(i+1), size_hint=(.2, .2))
+            self.add_widget(b)
 
 
 # class GridLayoutExample(GridLayout): # inside .kv file, directly accessing it by @
